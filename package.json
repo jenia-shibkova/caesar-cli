@@ -1,0 +1,24 @@
+{
+  "name": "caesar-cli",
+  "version": "1.0.0",
+  "description": "**Implement CLI tool that will encode and decode a text by [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenia-shibkova/caesar-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenia-shibkova/caesar-cli/issues"
+  },
+  "homepage": "https://github.com/jenia-shibkova/caesar-cli#readme",
+  "dependencies": {
+    "commander": "^6.1.0",
+    "stream": "0.0.2",
+    "string_decoder": "^1.3.0"
+  }
+}
