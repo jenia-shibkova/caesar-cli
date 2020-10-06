@@ -38,19 +38,22 @@ pipeline(
 ```
 
 **Usage example:**
-1. Encode from input.txt with shift 7 with output argument (success result):
+1. Encode from input.txt with shift 7 with output argument (result: success):
 ```
 node index.js -a encode --shift 7 -i input.txt --output output.txt
 ```
-2. Encode from input.txt with shift 7 without output argument (success result):
+2. Encode from input.txt with shift 7 with default output (result: success):
 ```
 node index.js -a encode --shift 7 -i input.txt
 ```
-3. Encode from input.txt with shift 7 with output argument (success result):
+3. Encode from input.txt with shift 7 with output argument (result: success):
 ```
 node index.js -a encode -s 7 -i "./input.txt" -o "./output.txt"
 ```
-
+4. Decode from output.txt with shift 7 with output argument plain.txt (result: success):
+```bash
+$ node index.js --action decode --shift 7 --input output.txt --output plain.txt
+```
 
 
 ```bash
