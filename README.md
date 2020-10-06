@@ -38,17 +38,30 @@ pipeline(
 ```
 
 **Usage example:**
+1. Encode from input.txt with shift 7 with output argument (result: success):
+```
+node index.js -a encode --shift 7 -i input.txt --output output.txt
+```
+2. Encode from input.txt with shift 7 with default output (result: success):
+```
+node index.js -a encode --shift 7 -i input.txt
+```
+3. Encode from input.txt with shift 7 with output argument (result: success):
+```
+node index.js -a encode -s 7 -i "./input.txt" -o "./output.txt"
+```
+4. Decode from output.txt with shift 7 with output argument plain.txt (result: success):
+```bash
+$ node index.js --action decode --shift 7 --input output.txt --output plain.txt
+```
+
 
 ```bash
-$ node my_caesar_cli -a encode -s 7 -i "./input.txt" -o "./output.txt"
+$ node index.js --action encode --shift 7 --input plain.txt --output encoded.txt
 ```
 
 ```bash
-$ node my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
-```
-
-```bash
-$ node my_caesar_cli --action decode --shift 7 --input decoded.txt --output plain.txt
+$ node index.js --action decode --shift 7 --input decoded.txt --output plain.txt
 ```
 
 > input.txt
